@@ -1,0 +1,35 @@
+# ---------------------------------------------------------------------------
+# requirements.txt
+#
+# This is a shopping list of extra Python libraries the project needs.
+# Python does not come with these built in, so we have to install them.
+#
+# HOW TO USE IT (type this in your terminal, inside the project folder):
+#
+#     pip install -r requirements.txt
+#
+# That one command reads this list and installs everything at once.
+# ---------------------------------------------------------------------------
+
+# pygame  -> the main game engine. Draws pictures, plays sounds, reads the
+#            keyboard and mouse. Almost every game here uses it.
+pygame>=2.5.0
+
+# numpy   -> lets us work with grids of numbers very fast.
+#            Connect 4 uses it to store the board.
+numpy>=1.24.0
+
+# pandas  -> reads spreadsheet / CSV files and does math on them.
+#            The GPS analysis tool uses it.
+pandas>=2.0.0
+
+# ursina  -> a simple 3D game engine, built on top of another engine (Panda3D).
+#            Only the little Minecraft demo uses it. If you don't care about
+#            the 3D game, you can skip installing this one.
+ursina>=6.0.0
+
+# NOTE:
+# 'tkinter' and 'turtle' are also used (Pong window, GPS window), but they
+# already come WITH Python, so they are not listed here.
+# On some Linux systems you may need to install tkinter separately:
+#     sudo apt install python3-tk
